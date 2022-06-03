@@ -15,26 +15,35 @@
         }
     </style>
 
+    <py-env>
+        - numpy
+    </py-env>
+
 </head>
 <body>
-    <div  class="container">
-        <h1 id="root" class="text-3xl"> Hello PyScript</h1>
+    <header class="mb-2 h-5">
 
-        <h1 class="text-4xl">Inbuilt Python web based Interpreter</h1>
+    </header>
+    <main  class="container">
+        <div class="flex-row h-6" style="height: 400px;max-height: 400px; overflow: scroll;">
+            <div class="lg text-3xl mb-2">Python Web supported Interpreter</div>
+            <py-repl>
+            </py-repl>
+        </div>
 
-        <py-repl>
+        <div class="flex-row">
 
-        </py-repl>
-    </div>
+            <div class="text-blue" id="my-array">
+                hello
+            </div>
+            <div class="ring-current ring-2 px-4 py-2 inline-block text-white font-semibold bg-teal-400 rounded">Add + 2</div>
+            <div class="ring-current ring-2 px-4 py-2 inline-block text-white font-semibold bg-teal-400 rounded">Subtract - 2</div>
 
-    <py-script>
-        name = "Vivek Tej"
-        print(name)
+        </div>
 
-        def calcSum(x,y):
-            return x+y
-        pyscript.write("root", calcSum(100,200))
-    </py-script>
+    </main>
+
+    <!-- <py-script src="./main.py"></py-script> -->
 
     
 </body>
