@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Py-Script</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <style>
+        body{
+            font-family: "Inter var";
+        }
+    </style>
+
+</head>
+<body>
+    <div  class="container">
+        <h1 id="root" class="text-3xl"> Hello PyScript</h1>
+
+        <h1 class="text-4xl">Inbuilt Python web based Interpreter</h1>
+
+        <py-repl>
+
+        </py-repl>
+    </div>
+
+    <py-script>
+        name = "Vivek Tej"
+        print(name)
+
+        def calcSum(x,y):
+            return x+y
+        pyscript.write("root", calcSum(100,200))
+    </py-script>
+
+    
+</body>
+</html>
